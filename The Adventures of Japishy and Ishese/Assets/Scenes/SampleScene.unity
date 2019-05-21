@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 1143878584}
   - component: {fileID: 1143878583}
   - component: {fileID: 1143878582}
+  - component: {fileID: 1143878586}
   m_Layer: 0
   m_Name: Japishy
   m_TagString: Untagged
@@ -322,6 +323,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1143878586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143878581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08d83e9c323ccc4b881594e9597954e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: 1
+  jumpForce: 10
+  moveSpeed: 10
 --- !u!1 &1573472472
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +478,7 @@ GameObject:
   - component: {fileID: 1818887533}
   - component: {fileID: 1818887532}
   - component: {fileID: 1818887531}
+  - component: {fileID: 1818887535}
   m_Layer: 0
   m_Name: Ishese
   m_TagString: Untagged
@@ -578,3 +595,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818887535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818887530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08d83e9c323ccc4b881594e9597954e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: 0
+  jumpForce: 10
+  moveSpeed: 10
