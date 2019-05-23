@@ -336,8 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: 1
-  jumpForce: 10
   moveSpeed: 10
+  jumpForce: 10
+  jumpWaitTime: 1
 --- !u!1 &1573472472
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ GameObject:
   - component: {fileID: 1573472473}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -608,5 +609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1: 0
-  jumpForce: 10
   moveSpeed: 10
+  jumpForce: 10
+  jumpWaitTime: 1
