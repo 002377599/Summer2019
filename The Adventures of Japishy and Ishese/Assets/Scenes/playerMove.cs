@@ -5,11 +5,9 @@ using UnityEngine;
 public class playerMove : MonoBehaviour
 {
 
-    public int moveX;
-    public bool facingRight = true;
     public int playerSpeed = 10;
     public bool player1 = true;
-    public int jumpPower = 500;
+    public int jumpPower = 400;
     private Rigidbody2D myRigidbody;
 
 
@@ -30,28 +28,30 @@ public class playerMove : MonoBehaviour
     void Move()
     {
 
+
         if (player1)
         {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                jump();
-            }
-
+            if (Input.GetKey(KeyCode.A))
+                myRigidbody.AddForce(Vector3.left*playerSpeed);
+            if (Input.GetKey(KeyCode.D))
+                myRigidbody.AddForce(Vector3.right * playerSpeed);
+            if (Input.GetKey(KeyCode.W))
+                myRigidbody.AddForce(Vector3.up*jumpPower);
+            if (Input.GetKey(KeyCode.S))
+                myRigidbody.AddForce(Vector3.down * playerSpeed);
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                jump();
-            }
-
+            if (Input.GetKey(KeyCode.LeftArrow))
+                myRigidbody.AddForce(Vector3.left * playerSpeed);
+            if (Input.GetKey(KeyCode.RightArrow))
+                myRigidbody.AddForce(Vector3.right * playerSpeed);
+            if (Input.GetKey(KeyCode.UpArrow))
+                myRigidbody.AddForce(Vector3.up*jumpPower);
+            if (Input.GetKey(KeyCode.DownArrow))
+                myRigidbody.AddForce(Vector3.down * playerSpeed);
+                
         }
-
-    }
-
-    void jump()
-    {
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
 
     }
 }

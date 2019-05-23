@@ -260,7 +260,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1143878584
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -335,11 +335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b72ef994de0a5b42b9c62f459623c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveX: 0
-  facingRight: 1
   playerSpeed: 10
   player1: 1
-  jumpPower: 500
+  jumpPower: 40
 --- !u!1 &1573472472
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +506,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1818887532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -609,8 +607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b72ef994de0a5b42b9c62f459623c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveX: 0
-  facingRight: 1
   playerSpeed: 10
   player1: 0
-  jumpPower: 500
+  jumpPower: 40
