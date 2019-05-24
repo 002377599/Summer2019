@@ -60,9 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BGScroller.cs" />
     <Compile Include="Assets\Scripts\playerMove.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Raymond Vu/Documents/GitHub/Summer2019/The Adventures of Japishy and Ishese/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
