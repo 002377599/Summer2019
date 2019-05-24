@@ -4,54 +4,68 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
-
     public int playerSpeed = 10;
     public bool player1 = true;
     public int jumpPower = 400;
     private Rigidbody2D myRigidbody;
 
+    private KeyCode rightCode;
+    private KeyCode leftCode;
+    private KeyCode jumpCode;
+
+    public float jumpWaitTime = 1.0f;
+    private float nextJumpTime;
+    private bool grounded = true;
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-
+        if (player1)
+        {
+            jumpCode = KeyCode.W;
+            rightCode = KeyCode.D;
+            leftCode = KeyCode.A;
+        }
+        else
+        {
+            jumpCode = KeyCode.UpArrow;
+            rightCode = KeyCode.RightArrow;
+            leftCode = KeyCode.LeftArrow;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
-
-        
     }
 
     void Move()
     {
-
-
-        if (player1)
+        if (Input.GetKey(leftCode))
+            myRigidbody.AddForce(Vector2.left * playerSpeed);
+        if (Input.GetKey(rightCode))
+            myRigidbody.AddForce(Vector2.right * playerSpeed);
+        if (Input.GetKey(jumpCode) && grounded && Time.time >= nextJumpTime)
         {
-            if (Input.GetKey(KeyCode.A))
-                myRigidbody.AddForce(Vector3.left*playerSpeed);
-            if (Input.GetKey(KeyCode.D))
-                myRigidbody.AddForce(Vector3.right * playerSpeed);
-            if (Input.GetKey(KeyCode.W))
-                myRigidbody.AddForce(Vector3.up*jumpPower);
-            if (Input.GetKey(KeyCode.S))
-                myRigidbody.AddForce(Vector3.down * playerSpeed);
+            myRigidbody.AddForce(Vector2.up * jumpPower);
+            nextJumpTime = Time.time + jumpWaitTime;
         }
-        else
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-                myRigidbody.AddForce(Vector3.left * playerSpeed);
-            if (Input.GetKey(KeyCode.RightArrow))
-                myRigidbody.AddForce(Vector3.right * playerSpeed);
-            if (Input.GetKey(KeyCode.UpArrow))
-                myRigidbody.AddForce(Vector3.up*jumpPower);
-            if (Input.GetKey(KeyCode.DownArrow))
-                myRigidbody.AddForce(Vector3.down * playerSpeed);
-                
-        }
+    }
 
+    void OnCollisionEnter2D(Collision2D theCollision)
+    {
+        if (theCollision.gameObject.tag == "floor")
+        {
+            grounded = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D theCollision)
+    {
+        if (theCollision.gameObject.tag == "floor")
+        {
+            grounded = false;
+        }
     }
 }
