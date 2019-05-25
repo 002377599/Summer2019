@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: bbf80d3d354e1594a8b9f79bb129e356
+guid: cf7cf7ecb1a3d7848a56d463b24a6358
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spriteSheet_0
-    21300002: spriteSheet_1
-    21300004: spriteSheet_2
-    21300006: spriteSheet_3
+    21300000: spriteSheet 1_0
+    21300002: spriteSheet 1_1
+    21300004: spriteSheet 1_2
+    21300006: spriteSheet 1_3
+    21300008: spriteSheet 1_4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -110,51 +111,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spriteSheet_0
+      name: spriteSheet 1_0
       rect:
         serializedVersion: 2
-        x: 84
-        y: 790
-        width: 112
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0811a9e23acb3846b4e2c5009f9883b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 756
-        width: 83
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5687afa03e5725c4293934139bd36ecb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 328
+        x: 52
+        y: 858
         width: 88
         height: 96
       alignment: 0
@@ -164,17 +125,37 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83b96cf8f62c8f841b94ec2d5c132f36
+      spriteID: 0a3ef80c5deb9ef42a4f77efa9726e6a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spriteSheet_3
+      name: spriteSheet 1_1
       rect:
         serializedVersion: 2
-        x: 604
-        y: 266
+        x: 188
+        y: 859
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72a05354e8661b42b533d55eac738e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteSheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 793
         width: 61
         height: 181
       alignment: 0
@@ -184,7 +165,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff55be13db677744a82dac56073a15c
+      spriteID: 453b7af8aa5e8034f91dc2547b7b6a90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteSheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 517
+        width: 83
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28406c26563101740a77790ec5911a62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteSheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 557
+        width: 132
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33671748f7d47f9478314008f4b92fd5
       vertices: []
       indices: 
       edges: []
@@ -192,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2032ca5be15c87b4898f2e89197b1eca
+    spriteID: 4a454ab5cb8a58743b533eb14e7a326a
     vertices: []
     indices: 
     edges: []

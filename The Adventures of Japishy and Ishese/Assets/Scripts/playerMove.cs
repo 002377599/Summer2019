@@ -43,7 +43,7 @@ public class playerMove : MonoBehaviour
     void Move()
     {
         if (Input.GetKey(leftCode))
-            myRigidbody.AddForce(Vector2.left*playerSpeed);
+            myRigidbody.AddForce(Vector2.left * playerSpeed);
         if (Input.GetKey(rightCode))
             myRigidbody.AddForce(Vector2.right * playerSpeed);
         if (Input.GetKey(jumpCode) && grounded && Time.time >= nextJumpTime)
